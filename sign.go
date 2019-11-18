@@ -1,6 +1,7 @@
 package schnorrkel
 
 import (
+
 	"github.com/gtank/merlin"
 	r255 "github.com/gtank/ristretto255"
 )

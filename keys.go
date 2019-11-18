@@ -14,6 +14,7 @@ type MiniSecretKey struct {
 }
 
 // SecretKey consists of a secret scalar and a signing nonce
+// change type key to *r255.scalar
 type SecretKey struct {
 	key   [32]byte // TODO: change this to a *r255.Scalar
 	nonce [32]byte

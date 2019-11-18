@@ -1,4 +1,4 @@
-module github.com/ChainSafe/go-schnorrkel
+module github.com/developerfred/go-schnorrkel
 
 go 1.13
 
