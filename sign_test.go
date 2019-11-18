@@ -3,7 +3,7 @@ package schnorrkel
 import (
 	"testing"
 
-	"github.com/noot/merlin"
+	"github.com/developerfred/merlin"
 )
 
 func TestSignAndVerify(t *testing.T) {

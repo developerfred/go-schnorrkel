@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"crypto/sha512"
 
-	"github.com/noot/merlin"
-	r255 "github.com/noot/ristretto255"
+	"github.com/developerfred/merlin"
+	r255 "github.com/developerfred/ristretto255"
 )
 
 // MiniSecretKey is a secret scalar
@@ -14,6 +14,7 @@ type MiniSecretKey struct {
 }
 
 // SecretKey consists of a secret scalar and a signing nonce
+// change type key to *r255.scalar
 type SecretKey struct {
 	key   [32]byte
 	nonce [32]byte
@@ -70,7 +71,7 @@ func NewRandomMiniSecretKey() (*MiniSecretKey, error) {
 	return &MiniSecretKey{key: scpriv}, nil
 }
 
-// ExpandUniform 
+// ExpandUniform
 func (s *MiniSecretKey) ExpandUniform() *SecretKey {
 	t := merlin.NewTranscript("ExpandSecretKeys")
 	t.AppendMessage([]byte("mini"), s.key.Encode([]byte{}))
@@ -88,7 +89,7 @@ func (s *MiniSecretKey) ExpandUniform() *SecretKey {
 	}
 }
 
-// ExpandEd25519 expands a mini secret key into a secret key 
+// ExpandEd25519 expands a mini secret key into a secret key
 // https://github.com/w3f/schnorrkel/blob/43f7fc00724edd1ef53d5ae13d82d240ed6202d5/src/keys.rs#L196
 func (s *MiniSecretKey) ExpandEd25519() *SecretKey {
 	h := sha512.Sum512(s.key.Encode([]byte{}))
