@@ -6,6 +6,7 @@ import (
 
 	"github.com/gtank/merlin"
 	r255 "github.com/gtank/ristretto255"
+
 )
 
 // MiniSecretKey is a secret scalar

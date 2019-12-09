@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 github.com/gtank/merlin v0.1.1-0.20191105220539-8318aed1a79f h1:8N8XWLZelZNibkhM1FuF+3Ad3YIbgirjdMiVA0eUkaM=
 github.com/gtank/merlin v0.1.1-0.20191105220539-8318aed1a79f/go.mod h1:T86dnYJhcGOh5BjZFCJWTDeTK7XW8uE+E21Cy/bIQ+s=
 github.com/gtank/ristretto255 v0.1.2 h1:JEqUCPA1NvLq5DwYtuzigd7ss8fwbYay9fi4/5uMzcc=
 github.com/gtank/ristretto255 v0.1.2/go.mod h1:Ph5OpO6c7xKUGROZfWVLiJf9icMDwUeIvY4OmlYW69o=
+=======
+github.com/developerfred/merlin v0.1.2 h1:kjZn5EppPC4ht/wziEgtMifsm5Y9aoEHTKb0b6ssr8g=
+github.com/developerfred/merlin v0.1.2/go.mod h1:7R/cycDyBa3T3yzXQZADYeFKQdnVk8uE8NfiErLqQ5U=
+github.com/developerfred/ristretto255 v0.1.3 h1:xKtO0eeH+YRfAARlptnklnZXa7d/+ONAF60exXcRiXw=
+github.com/developerfred/ristretto255 v0.1.3/go.mod h1:ohed0TPDwfAWrrHrTQVUwGUtxJhtEpSAjlvoUBKEu6A=
+>>>>>>> 7260309d417b39184155e2f015fdbb0e5a92f332
 github.com/mimoo/StrobeGo v0.0.0-20181016162300-f8f6d4d2b643 h1:hLDRPB66XQT/8+wG9WsDpiCvZf1yKO7sz7scAjSlBa0=
 github.com/mimoo/StrobeGo v0.0.0-20181016162300-f8f6d4d2b643/go.mod h1:43+3pMjjKimDBf5Kr4ZFNGbLql1zKkbImw+fZbw3geM=
